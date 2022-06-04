@@ -19,7 +19,7 @@
    --bs-navbar-hover-color: var(--color3);
    --bs-navbar-brand-color: var(--color5);
    --bs-navbar-brand-font-size: 36px;
-   --bs-nav-link-font-size: 22px;
+   --bs-nav-link-font-size: 18px;
    --bs-navbar-active-color: var(--color3);
    --bs-navbar-toggler-color: var(--color1)
 }
@@ -28,12 +28,13 @@
     border-radius: 5px;
     color: #7a7a7a;
     background-color: #cdcdcd;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 input{
     background-color: var(--color7);
     border: 0px;
+    width: 9rem;
 }
 
 input:focus
