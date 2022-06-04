@@ -1,0 +1,48 @@
+:root{
+    --color1: #67daff;
+    --color2: #ffffff;
+    --color3: #007ac1;
+    --color4: #c4c4c4;
+    --color5: #000000;
+    --color6: #c3f5ff;
+    --color7: rgba(255, 255, 255, 0);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+   background-color: var(--color2);
+   box-shadow: 5px 0px 10px #888888;
+   --bs-navbar-color: var(--color1);
+   --bs-navbar-hover-color: var(--color3);
+   --bs-navbar-brand-color: var(--color5);
+   --bs-navbar-brand-font-size: 36px;
+   --bs-nav-link-font-size: 22px;
+   --bs-navbar-active-color: var(--color3);
+   --bs-navbar-toggler-color: var(--color1)
+}
+
+.form-container{
+    border-radius: 5px;
+    color: #7a7a7a;
+    background-color: #cdcdcd;
+    font-size: 22px;
+}
+
+input{
+    background-color: var(--color7);
+    border: 0px;
+}
+
+input:focus
+{
+         outline: none;
+}
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
+}
+
