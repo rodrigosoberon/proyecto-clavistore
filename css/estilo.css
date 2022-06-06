@@ -47,3 +47,34 @@ input:focus
          box-shadow: none;
 }
 
+.footer {
+
+    background-color: var(--color4);
+    --bs-navbar-brand-color: var(--color5);
+    --bs-navbar-brand-font-size: 36px;
+    --bs-texto-footer-font-size: 18px;
+    --bs-nav-link-font-size: 18px;
+}
+
+.texto-footer-titles {
+    font-weight: bold;
+}
+
+.nav-link-footer {
+    color: var(--color5);
+}
+
+.nav-link-footer:hover {
+    color: var(--color2);
+}
+
+.img-footer {
+    width: 50px;
+    height: 25px;
+}
+
+.img-whatsapp {
+    width: 50%;
+    height: 50%;
+    box-shadow: 0px 5px 5px #888888;
+}
