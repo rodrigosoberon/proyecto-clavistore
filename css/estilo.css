@@ -47,6 +47,81 @@ input:focus
          box-shadow: none;
 }
 
+
+/* CAROUSEL INICIO */
+
+.boton-carousel {
+    background-color: var(--color1);
+    border-radius: 5px;
+}
+
+.carousel-caption {
+    width: 40%;
+}
+
+/* CAROUSEL FIN */
+
+
+.productos-home {
+    background-color: var(--color3);
+   
+}
+
+.productos-home-titulo {
+    color: var(--color2);
+}
+
+.productos-home-parrafo {
+    color: var(--color2);
+}
+
+.productos-home a {
+    background-color: var(--color2);
+    color: var(--color5);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.nosotros-home {
+    background-color: var(--color6);
+}
+.nosotros-home img {
+    height: 60%;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.titulo-nosotros-home {
+    font-size: 36px;
+}
+
+.potencia-negocio-home {
+    background-color: var(--color2);
+
+}
+
+.potencia-negocio-boton {
+    background-color: var(--color3);
+    color: var(--color2);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.potencia-negocio-home h3{
+    font-size: 36px;
+}
+
+.potencia-negocio-home img {
+    height: 80%;
+    width: 80%;
+}
+
+
+/* FOOTER */
+
 .footer {
 
     background-color: var(--color4);
@@ -73,8 +148,17 @@ input:focus
     height: 25px;
 }
 
-.img-whatsapp {
-    width: 50%;
-    height: 50%;
-    box-shadow: 0px 5px 5px #888888;
+.img-wp {
+    width: 50px;
+    height: 50px;
 }
+
+
+  
+
+  
+  
+  
+
+  
+  
