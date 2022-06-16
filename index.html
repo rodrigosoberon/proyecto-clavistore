@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,7 +49,7 @@
               <a class="nav-link" href="./html/productos.html">Productos</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="./html/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="./html/contacto.html">Contacto</a>
@@ -68,235 +71,407 @@
     </nav>
 
     <header>
-      
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-
+      <!-- <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
         </div>
 
         <div class="carousel-inner">
-
-          <div class="carousel-item active d-flex flex-column justify-content-center align-items-start">
-            <img src="img/banner/woman-using-digital-tablet-on-couch.jpg" class="d-block w-100" alt="...">
+          <div
+            class="carousel-item active d-flex flex-column justify-content-center align-items-start"
+          >
+            <img
+              src="img/banner/woman-using-digital-tablet-on-couch.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
             <div class="carousel-caption d-flex flex-column align-items-start">
-             
-              <h2 class="text-start display-5">Accesorios para celulares Apple y Samsung</h2>
-              <a class="text-center border-0 fw-bold boton-carousel w-25 py-2" href="./html/productos.html">Vér más</a>
-           
+              <h2 class="text-start display-5">
+                Accesorios para celulares Apple y Samsung
+              </h2>
+              <a
+                class="text-center border-0 fw-bold boton-carousel w-25 py-2"
+                href="./html/productos.html"
+                >Vér más</a
+              >
             </div>
           </div>
 
-
-        
           <div class="carousel-item d-flex flex-column justify-content-center">
-            <img src="img/banner/earpods.jpg" class="d-block w-100" alt="...">
+            <img src="img/banner/earpods.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-flex flex-column align-items-start">
               <h2 class="text-start display-5">Auriculares Earpods</h2>
               <h3 class="text-start">¡Sumergite en tu mundo!</h3>
-              <button class="text-center border-0 fw-bold boton-carousel w-25 py-2">Vér más</button>
+              <button
+                class="text-center border-0 fw-bold boton-carousel w-25 py-2"
+              >
+                Vér más
+              </button>
             </div>
           </div>
-        
-          
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div> -->
 
+      <div class="slideshow-container container-fluid p-0">
+        <div class="mySlides fade-carousel">
+          <img class="carousel-img"
+            src="./img/banner/pexels-rann-vijay-7742585.jpg"
+          />
+          <div class="carousel-text">
+            <h1 class="text-start">
+              Accesorios para celulares Apple y Samsung
+            </h1>
+            <button type="button" class="btn btn-primary" href="./html/productos.html">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <div class="mySlides fade-carousel">
+          <img class="carousel-img" src="./img/banner/earpods.jpg"/>
+          <div class="carousel-text">
+            <h1 class="text-start">
+              Auriculares EarPods
+            </h1>
+            <p>¡Sumergite en tu mundo!</p>
+            <button type="button" class="btn btn-primary" href="./html/productos.html">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <div class="indicadores">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
       </div>
-
     </header>
 
     <main>
-
       <!-- SECCION PRODUCTOS -->
-      <section class="container-fluid productos-home d-flex flex-column align-items-center">
-
-        <h3 class="mt-5 productos-home-titulo container-fluid text-center">¡Conocé nuestros productos destacados!</h3>
+      <section
+        class="container-fluid productos-home d-flex flex-column align-items-center"
+      >
+        <h3 class="mt-5 productos-home-titulo container-fluid text-center">
+          ¡Conocé nuestros productos destacados!
+        </h3>
 
         <article class="d-flex flex-column flex-md-row w-75 my-5">
-
           <div>
-            <img class="img-fluid" src="img/Productos/Mask group-1.png" alt="">
-            <p class="text-center fs-5 productos-home-parrafo">Cargador y fundas MagSafe</p>
+            <img
+              class="img-fluid"
+              src="img/Productos/Mask group-1.png"
+              alt=""
+            />
+            <p class="text-center fs-5 productos-home-parrafo">
+              Cargador y fundas MagSafe
+            </p>
           </div>
 
           <div>
-            <img class="img-fluid" src="img/Productos/Mask group-2.png" alt="">
-            <p class="text-center fs-5 productos-home-parrafo">Auricular Airpods</p>
+            <img
+              class="img-fluid"
+              src="img/Productos/Mask group-2.png"
+              alt=""
+            />
+            <p class="text-center fs-5 productos-home-parrafo">
+              Auricular Airpods
+            </p>
           </div>
 
           <div>
-            <img class="img-fluid" src="img/Productos/Mask group.png" alt="">
+            <img class="img-fluid" src="img/Productos/Mask group.png" alt="" />
             <p class="text-center fs-5 productos-home-parrafo">Fundas Iphone</p>
           </div>
-
         </article>
 
-        <a class="mb-5 productos-home-boton border-0 w-25 fw-bold py-1" href="html/productos.html">Ver todos los productos</a>
-
+        <a
+          class="mb-5 productos-home-boton border-0 w-25 fw-bold py-1"
+          href="html/productos.html"
+          >Ver todos los productos</a
+        >
       </section>
 
       <!-- SECCION NOSOTROS -->
 
-      <section class="container-fluid nosotros-home d-flex flex-column flex-md-row align-items-center p-5 gap-2">
-
-        <article class="container-fluid w-55 d-flex flex-row justify-content-center">
-
+      <section id="nosotros"
+        class="container-fluid nosotros-home d-flex flex-column flex-md-row align-items-center p-5 gap-2"
+      >
+        <article
+          class="container-fluid w-55 d-flex flex-row justify-content-center"
+        >
           <div class="d-flex flex-column gap-3">
-          <h3 class="titulo-nosotros-home">¿Quienes somos?</h3>
-          <p class="fs-5">Somos una empresa joven, apasionada por el rubro de la tecnología, enfocada <span class="fw-bold"> en brindar soluciones y productos de excelente calidad para Samsung y Apple.</span></p>
-          <p class="fs-5">Comenzamos con este proyecto en el 2014, en Venezuela y ahora decidimos darle vida a este sueño en Argentina.</p>
-          <p class="fs-5">Nuestra meta es <span class="fw-bold"> tener clientes satisfechos con nuestros productos y servicios, brindandoles un servicio de alta calidad.</span></p>
-        </div>
+            <h3 class="titulo-nosotros-home">¿Quienes somos?</h3>
+            <p class="fs-5">
+              Somos una empresa joven, apasionada por el rubro de la tecnología,
+              enfocada
+              <span class="fw-bold">
+                en brindar soluciones y productos de excelente calidad para
+                Samsung y Apple.</span
+              >
+            </p>
+            <p class="fs-5">
+              Comenzamos con este proyecto en el 2014, en Venezuela y ahora
+              decidimos darle vida a este sueño en Argentina.
+            </p>
+            <p class="fs-5">
+              Nuestra meta es
+              <span class="fw-bold">
+                tener clientes satisfechos con nuestros productos y servicios,
+                brindandoles un servicio de alta calidad.</span
+              >
+            </p>
+          </div>
         </article>
 
-        <article class="container-fluid w-45 d-flex flex-column align-items-center">
-          <img src="img/imagenes/nosotros-home.jpg" alt="" class="img-fluid">
+        <article
+          class="container-fluid w-45 d-flex flex-column align-items-center"
+        >
+          <img src="img/imagenes/nosotros-home.jpg" alt="" class="img-fluid" />
         </article>
       </section>
 
       <!-- SECCION POTENCIA TU NEGOCIO-->
 
-      <section class="container-fluid potencia-negocio-home d-flex flex-column flex-md-row align-items-center p-5">
-
-        <article class="container-fluid w-45 d-flex flex-column align-items-center">
-          <img src="img/imagenes/potencia-tu-negocio.png" alt="" class="img-fluid">
+      <section
+        class="container-fluid potencia-negocio-home d-flex flex-column flex-md-row align-items-center p-5"
+      >
+        <article
+          class="container-fluid w-45 d-flex flex-column align-items-center"
+        >
+          <img
+            src="img/imagenes/potencia-tu-negocio.png"
+            alt=""
+            class="img-fluid"
+          />
         </article>
 
-        <article class="container-fluid w-55 d-flex flex-row justify-content-center">
-        <div class="d-flex flex-column gap-3">
-          <h3 class="titulo-negocio-home">Potenciá tu negocio</h3>
-          <p class="fs-4"><span class="fw-bold"> ¡Convertite en distribuidor de nuestros productos!</span> Realizamos venta por  mayor y menor.</p>
-          <a class="mb-5 potencia-negocio-boton border-0 w-50 fw-bold py-1" href="html/contacto.html">Quiero saber más</a>
-        </div>
+        <article
+          class="container-fluid w-55 d-flex flex-row justify-content-center"
+        >
+          <div class="d-flex flex-column gap-3">
+            <h3 class="titulo-negocio-home">Potenciá tu negocio</h3>
+            <p class="fs-4">
+              <span class="fw-bold">
+                ¡Convertite en distribuidor de nuestros productos!</span
+              >
+              Realizamos venta por mayor y menor.
+            </p>
+            <a
+              class="mb-5 potencia-negocio-boton border-0 w-50 fw-bold py-1"
+              href="html/contacto.html"
+              >Quiero saber más</a
+            >
+          </div>
         </article>
       </section>
     </main>
 
     <!-- Footer -->
-  <footer>
+    <footer>
+      <div class="footer py-3">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-5 col-lg-5 col-xl-6 mb-4 d-flex flex-column gap-3"
+              >
+                <!-- Content -->
+                <a class="navbar-brand" href="./index.html">CLAVISTORE</a>
 
-    <div class="footer py-3">
+                <div class="container d-flex flex-column">
+                  <h5 class="texto-footer-titles">¡Contactanos!</h5>
 
-    
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-5 col-xl-6 mb-4 d-flex flex-column gap-3">
-            <!-- Content -->
-            <a class="navbar-brand" href="./index.html">CLAVISTORE</a>
-          
-            <div class="container d-flex flex-column">
-              <h5 class="texto-footer-titles">¡Contactanos!</h5>
-              
-              <div class="d-flex flex-row gap-3">
-              <i class="fa-solid fa-phone mt-1"></i>
-              <p class=" mb-0">11-5762-3955</p>
+                  <div class="d-flex flex-row gap-3">
+                    <i class="fa-solid fa-phone mt-1"></i>
+                    <p class="mb-0">11-5762-3955</p>
+                  </div>
+
+                  <div class="d-flex flex-row gap-3">
+                    <i class="fa-regular fa-envelope mt-1"></i>
+                    <p class="">clavistores2014@gmail.com</p>
+                  </div>
+                </div>
               </div>
+              <!-- Grid column -->
 
-              <div class="d-flex flex-row gap-3">
-                <i class="fa-regular fa-envelope mt-1"></i>
-              <p class="">clavistores2014@gmail.com</p>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                <!-- Links -->
+                <div>
+                  <h5 class="texto-footer texto-footer-titles my-2">
+                    Navegación
+                  </h5>
+
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-footer active p-0"
+                        aria-current="page"
+                        href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#"
+                        >Productos</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#"
+                        >Nosotros</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#"
+                        >Contacto</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#"
+                        >Preguntas Frecuentes</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>  
+              <!-- Grid column -->
 
-          </div>
-          <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+                <!-- Links -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3  mb-4">
-            <!-- Links -->
-            <div>
-              <h5 class="texto-footer texto-footer-titles my-2">Navegación</h5>
-              
-              <ul class="nav flex-column">
-                
-                <li class="nav-item">
-                  <a class="nav-link nav-link-footer active p-0" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-footer p-0" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-footer p-0" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-footer p-0" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-footer p-0" href="#">Preguntas Frecuentes</a>
-                </li>
-              </ul>
+                <div>
+                  <h5 class="texto-footer-titles my-2">Medios de Pago</h5>
+                  <div class="d-flex flex-row">
+                    <img
+                      class="me-2 img-footer"
+                      src="../img/mp.jpg"
+                      alt="mercado pago"
+                    />
+                    <img
+                      class="mx-2 img-footer"
+                      src="../img/rapipago.jpg"
+                      alt=" rapipago"
+                    />
+                    <img
+                      class="mx-2 img-footer"
+                      src="../img/pagofacil.jpg"
+                      alt="pago fácil"
+                    />
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="texto-footer-titles my-2">Formas de envío</h5>
+                  <div class="d-flex flex-row">
+                    <img
+                      class="me-2 img-footer"
+                      src="../img/correo.jpg"
+                      alt="correo argentino"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-1 col-lg-2 col-xl-1 mb-md-0 mb-4">
+                <!-- Links -->
+                <img
+                  class="img-wp rounded-circle"
+                  src="../img/whatsapp.jpg"
+                  alt="whatsapp"
+                />
+              </div>
+              <!-- Grid column -->
             </div>
-
+            <!-- Grid row -->
           </div>
-          <!-- Grid column -->
+        </section>
+        <!-- Section: Links  -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2  mb-4">
-            <!-- Links -->
-            
-
-              <div>
-                <h5 class="texto-footer-titles my-2">Medios de Pago</h5>
-                <div class="d-flex flex-row">
-                  <img class="me-2 img-footer" src="../img/mp.jpg" alt="mercado pago">
-                  <img class="mx-2 img-footer" src="../img/rapipago.jpg" alt=" rapipago">
-                  <img class="mx-2 img-footer" src="../img/pagofacil.jpg" alt="pago fácil">
-                </div>
-              </div>
-
-              <div class="mt-4">
-                <h5 class="texto-footer-titles my-2">Formas de envío</h5>
-                <div class="d-flex flex-row">
-                  <img class="me-2 img-footer" src="../img/correo.jpg" alt="correo argentino">
-                </div>
-              </div>
-
-            
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-1 col-lg-2 col-xl-1  mb-md-0 mb-4">
-            <!-- Links -->
-            <img class="img-wp rounded-circle" src="../img/whatsapp.jpg" alt="whatsapp">
-          </div>
-          <!-- Grid column -->
+        <!-- Copyright -->
+        <div class="px-3 ms-5">
+          <p>Desarrollado por Florencia Patania 2022</p>
         </div>
-        <!-- Grid row -->
+        <!-- Copyright -->
       </div>
-    </section>
-    <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
 
-    <!-- Copyright -->
-    <div class="px-3 ms-5">
-      <p>Desarrollado por Florencia Patania 2022</p>
-    </div>
-    <!-- Copyright -->
-  </div>
-  </footer>
-  <!-- Footer -->
-
-
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+      }
+    </script>
   </body>
 </html>
