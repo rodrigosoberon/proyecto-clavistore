@@ -24,7 +24,7 @@
     <title>Clavistore</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg py-3">
+    <nav class="navbar sticky-top navbar-expand-lg py-3">
       <div class="container-fluid">
         <a class="navbar-brand ms-5" href="./index.html">CLAVISTORE</a>
         <button
@@ -59,7 +59,7 @@
             <div class="d-flex form-container d-inline-flex">
               <i class="fa-solid fa-magnifying-glass p-2 fs-2"></i>
               <input
-                class="me-2"
+                class="navbar-input me-2"
                 type="search"
                 placeholder="¿Qué buscas?"
                 aria-label="Search"
@@ -71,36 +71,40 @@
     </nav>
 
     <header>
-
-      <div class="slideshow-container container-fluid p-0">
-        <div class="mySlides fade-carousel">
-          <img class="carousel-img"
+      <div class="carousel container-fluid p-0">
+        <div class="carousel-slide fade-carousel">
+          <img
+            class="carousel-slide-img"
             src="./img/banner/pexels-rann-vijay-7742585.jpg"
           />
-          <div class="carousel-text">
+          <div class="carousel-slide-text">
             <h1 class="text-start">
               Accesorios para celulares Apple y Samsung
             </h1>
-            <button type="button" class="btn btn-primary" href="./html/productos.html">
+            <a
+              class="carousel-slide-button btn btn-primary px-4"
+              href="#productos"
+            >
               Ver más
-            </button>
+            </a>
           </div>
         </div>
 
-        <div class="mySlides fade-carousel">
-          <img class="carousel-img" src="./img/banner/earpods.jpg"/>
-          <div class="carousel-text">
-            <h1 class="text-start">
-              Auriculares EarPods
-            </h1>
-            <p>¡Sumergite en tu mundo!</p>
-            <button type="button" class="btn btn-primary" href="./html/productos.html">
+        <div class="carousel-slide fade-carousel">
+          <img class="carousel-slide-img" src="./img/banner/earpods.jpg" />
+          <div class="carousel-slide-text">
+            <h1 class="text-start">Auriculares EarPods</h1>
+            <h4>¡Sumergite en tu mundo!</h4>
+            <a
+              class="carousel-slide-button btn btn-primary px-4"
+              href="#productos"
+            >
               Ver más
-            </button>
+            </a>
           </div>
         </div>
 
-        <div class="indicadores">
+        <div class="carousel-indicadores">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
         </div>
@@ -109,7 +113,8 @@
 
     <main>
       <!-- SECCION PRODUCTOS -->
-      <section id="productos"
+      <section
+        id="productos"
         class="container-fluid productos-home d-flex flex-column align-items-center"
       >
         <h3 class="mt-5 productos-home-titulo container-fluid text-center">
@@ -147,14 +152,15 @@
 
         <a
           class="mb-5 productos-home-boton border-0 w-25 fw-bold py-1"
-          href="html/productos.html"
+          href="#productos"
           >Ver todos los productos</a
         >
       </section>
 
       <!-- SECCION NOSOTROS -->
 
-      <section id="nosotros"
+      <section
+        id="nosotros"
         class="container-fluid nosotros-home d-flex flex-column flex-md-row align-items-center p-5 gap-2"
       >
         <article
@@ -286,12 +292,16 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-footer p-0" href="./html/contacto.html"
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="./html/contacto.html"
                         >Contacto</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-footer p-0" href="./html/preguntas.html"
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="./html/preguntas.html"
                         >Preguntas Frecuentes</a
                       >
                     </li>
@@ -301,36 +311,36 @@
               <!-- Grid column -->
 
               <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+              <div class="col-md-3 col-lg-3 col-xl-2 mb-4">
                 <!-- Links -->
 
                 <div>
-                  <h5 class="texto-footer-titles my-2">Medios de Pago</h5>
-                  <div class="d-flex flex-row">
+                  <h5 class="texto-footer-titles my-2 text-nowrap">Medios de Pago</h5>
+                  <div class="d-flex flex-row justify-content-center">
                     <img
                       class="me-2 img-footer"
-                      src="../img/mp.jpg"
+                      src="./img/mp.jpg"
                       alt="mercado pago"
                     />
                     <img
                       class="mx-2 img-footer"
-                      src="../img/rapipago.jpg"
+                      src="./img/rapipago.jpg"
                       alt=" rapipago"
                     />
                     <img
                       class="mx-2 img-footer"
-                      src="../img/pagofacil.jpg"
+                      src="./img/pagofacil.jpg"
                       alt="pago fácil"
                     />
                   </div>
                 </div>
 
                 <div class="mt-4">
-                  <h5 class="texto-footer-titles my-2">Formas de envío</h5>
-                  <div class="d-flex flex-row">
+                  <h5 class="texto-footer-titles my-2 text-nowrap">Formas de envío</h5>
+                  <div class="d-flex flex-row justify-content-center">
                     <img
                       class="me-2 img-footer"
-                      src="../img/correo.jpg"
+                      src="./img/correo.jpg"
                       alt="correo argentino"
                     />
                   </div>
@@ -339,11 +349,11 @@
               <!-- Grid column -->
 
               <!-- Grid column -->
-              <div class="col-md-1 col-lg-2 col-xl-1 mb-md-0 mb-4">
+              <div class="col-md-1 col-lg-1 col-xl-1 mb-md-0 mb-4">
                 <!-- Links -->
                 <img
                   class="img-wp rounded-circle"
-                  src="../img/whatsapp.jpg"
+                  src="./img/whatsapp.jpg"
                   alt="whatsapp"
                 />
               </div>
@@ -353,7 +363,7 @@
           </div>
         </section>
         <!-- Section: Links  -->
-
+        <hr />
         <!-- Copyright -->
         <div class="px-3 ms-5">
           <p>Desarrollado por Florencia Patania 2022</p>
@@ -379,7 +389,7 @@
 
       function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
+        let slides = document.getElementsByClassName("carousel-slide");
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {
           slideIndex = 1;

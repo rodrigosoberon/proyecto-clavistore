@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg py-3">
+    <nav class="navbar sticky-top navbar-expand-lg py-3">
       <div class="container-fluid">
         <a class="navbar-brand ms-5" href="../index.html">CLAVISTORE</a>
         <button
@@ -60,7 +60,7 @@
             <div class="d-flex form-container d-inline-flex">
               <i class="fa-solid fa-magnifying-glass p-2 fs-2"></i>
               <input
-                class="me-2"
+                class="navbar-input me-2"
                 type="search"
                 placeholder="¿Qué buscas?"
                 aria-label="Search"
@@ -74,7 +74,7 @@
 
     <header>
       <div class="banner-preguntas-frecuentes">
-        <div class="texto-banner">
+        <div class="banner-texto">
           <h1 class="text-start">Preguntas frecuentes</h1>
         </div>
       </div>
@@ -92,10 +92,17 @@
         <p>Mercado Pago, transferencia bancaria y efectivo.</p>
         <hr />
         <p class="fw-bold pt-3">4-¿Hacen entregas?</p>
-        <p>Si, podemos coordinar entregas en Av. Monroe 4966, Villa Urquiza CABA, de 9 a 17hs.</p>
+        <p>
+          Si, podemos coordinar entregas en Av. Monroe 4966, Villa Urquiza CABA,
+          de 9 a 17hs.
+        </p>
         <hr />
         <p class="fw-bold pt-3">5-¿Hacen ventas por mayor?</p>
-        <p>Si, hacemos ventas por mayor y menor. Para tener más inormación de cómo convertirte en distribuidor de nuestros productos, contactanos por Whatsapp o mail.</p>
+        <p>
+          Si, hacemos ventas por mayor y menor. Para tener más inormación de
+          cómo convertirte en distribuidor de nuestros productos, contactanos
+          por Whatsapp o mail.
+        </p>
       </div>
     </main>
 
@@ -112,7 +119,7 @@
                 class="col-md-5 col-lg-5 col-xl-6 mb-4 d-flex flex-column gap-3"
               >
                 <!-- Content -->
-                <a class="navbar-brand" href="../index.html">CLAVISTORE</a>
+                <a class="navbar-brand" href="./index.html">CLAVISTORE</a>
 
                 <div class="container d-flex flex-column">
                   <h5 class="texto-footer-titles">¡Contactanos!</h5>
@@ -143,31 +150,31 @@
                       <a
                         class="nav-link nav-link-footer active p-0"
                         aria-current="page"
-                        href="../index.html"
+                        href="#"
                         >Home</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a
-                        class="nav-link nav-link-footer p-0"
-                        href="../index.html#productos"
+                      <a class="nav-link nav-link-footer p-0" href="../index.html#productos"
                         >Productos</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a
-                        class="nav-link nav-link-footer p-0"
-                        href="../index.html#nosotros"
+                      <a class="nav-link nav-link-footer p-0" href="../index.html#nosotros"
                         >Nosotros</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-footer p-0" href="#"
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="./contacto.html"
                         >Contacto</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link nav-link-footer p-0" href="#"
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="#"
                         >Preguntas Frecuentes</a
                       >
                     </li>
@@ -177,12 +184,14 @@
               <!-- Grid column -->
 
               <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+              <div class="col-md-3 col-lg-3 col-xl-2 mb-4">
                 <!-- Links -->
 
                 <div>
-                  <h5 class="texto-footer-titles my-2">Medios de Pago</h5>
-                  <div class="d-flex flex-row">
+                  <h5 class="texto-footer-titles my-2 text-nowrap">
+                    Medios de Pago
+                  </h5>
+                  <div class="d-flex flex-row justify-content-center">
                     <img
                       class="me-2 img-footer"
                       src="../img/mp.jpg"
@@ -202,8 +211,10 @@
                 </div>
 
                 <div class="mt-4">
-                  <h5 class="texto-footer-titles my-2">Formas de envío</h5>
-                  <div class="d-flex flex-row">
+                  <h5 class="texto-footer-titles my-2 text-nowrap">
+                    Formas de envío
+                  </h5>
+                  <div class="d-flex flex-row justify-content-center">
                     <img
                       class="me-2 img-footer"
                       src="../img/correo.jpg"
@@ -215,7 +226,7 @@
               <!-- Grid column -->
 
               <!-- Grid column -->
-              <div class="col-md-1 col-lg-2 col-xl-1 mb-md-0 mb-4">
+              <div class="col-md-1 col-lg-1 col-xl-1 mb-md-0 mb-4">
                 <!-- Links -->
                 <img
                   class="img-wp rounded-circle"
@@ -229,7 +240,7 @@
           </div>
         </section>
         <!-- Section: Links  -->
-
+        <hr />
         <!-- Copyright -->
         <div class="px-3 ms-5">
           <p>Desarrollado por Florencia Patania 2022</p>
