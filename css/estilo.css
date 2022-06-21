@@ -170,6 +170,11 @@ input:focus {
   width: 80%;
 }
 
+/* Imagen Banner */
+#banner {
+  width: 100%;
+}
+
 /* FOOTER */
 
 .footer {
