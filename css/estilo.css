@@ -170,10 +170,37 @@ input:focus {
   width: 80%;
 }
 
-/* Imagen Banner */
-#banner {
+/* Banner */
+.banner-contacto {
   width: 100%;
+  height: 50vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.5), rgba(0, 122, 193, 0.5)),url("../img/banner/portrait-of-smiling-woman-texting-on-mobile-phone.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+
+.banner-preguntas-frecuentes {
+  width: 100%;
+  height: 40vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.5), rgba(0, 122, 193, 0.5)),url("../img/banner/woman-using-digital-tablet-on-couch.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.texto-banner{
+  color: var(--color2);
+  position: absolute;
+  margin-left: 5rem;
+  top: 50%;
+  width: 50%;
+  text-align: left;
+}
+
 
 /* FOOTER */
 
