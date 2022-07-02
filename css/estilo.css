@@ -177,6 +177,10 @@
   text-align: center;
 }
 
+.potencia-negocio-boton:hover{
+  color: var(--color2);
+}
+
 .potencia-negocio-home h3 {
   font-size: 36px;
 }
@@ -217,7 +221,40 @@
   text-align: left;
 }
 
+.banner-texto-productos {
+  color: var(--color2); 
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  transform: translate(0, -90%);
+  width: 50%;
+  text-align: center;
+}
+
+.banner-productos {
+  width: 100%;
+  height: 55vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.3), rgba(0, 122, 193, 0.3)),url("../img/banner/pexels-rann-vijay-7742585.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 /* BANNER fin */
+
+
+/* SECCION PRODUCTOS */
+
+.fa-circle-arrow-down {
+  color: var(--color2);
+}
+
+.productos-home-parrafo {
+  height: 50px;
+}
+
+/* SECCION FORM */
 
 .form-contacto {
   background-color: var(--color3) ;
@@ -237,6 +274,11 @@
   width: 45%;
   background-color: var(--color1);
   border-radius: 5%;
+}
+
+.boton-form:hover {
+  background-color: var(--color1);
+  color: var(--color2);
 }
 
 /* FOOTER */
