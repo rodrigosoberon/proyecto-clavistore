@@ -1,14 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/75f1400ec2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Clavistore</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="./index.html">CLAVISTORE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 fw-bold">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="html/productos.html">Productos</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="./html/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form role="search">
+            <div class="d-flex form-container d-inline-flex">
+              <i class="fa-solid fa-magnifying-glass p-2 fs-2"></i>
+              <input
+                class="navbar-input me-2"
+                type="search"
+                placeholder="¿Qué buscas?"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-    <h1>proyecto clavistore</h1>
-    
-</body>
+    <header>
+      <div class="carousel container-fluid p-0">
+        <div class="carousel-slide fade-carousel">
+          <img
+            class="carousel-slide-img"
+            src="./img/banner/pexels-rann-vijay-7742585.jpg"
+          />
+          <div class="carousel-slide-text">
+            <h1 class="text-start">
+              Accesorios para celulares Apple y Samsung
+            </h1>
+            <a
+              class="carousel-slide-button btn btn-primary px-4"
+              href="#productos"
+            >
+              Ver más
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-slide fade-carousel">
+          <img class="carousel-slide-img" src="./img/banner/earpods.jpg" />
+          <div class="carousel-slide-text">
+            <h1 class="text-start">Auriculares EarPods</h1>
+            <h4>¡Sumergite en tu mundo!</h4>
+            <a
+              class="carousel-slide-button btn btn-primary px-4"
+              href="#productos"
+            >
+              Ver más
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-indicadores">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECCION PRODUCTOS -->
+      <section
+        id="productos"
+        class="container-fluid productos-home d-flex flex-column align-items-center"
+      >
+        <h3 class="mt-5 productos-home-titulo container-fluid text-center">
+          ¡Conocé nuestros productos destacados!
+        </h3>
+
+        <article class="d-flex flex-column flex-md-row w-75 my-5">
+          <div>
+            <img
+              class="img-fluid"
+              src="img/Productos/Mask group-1.png"
+              alt=""
+            />
+            <p class="text-center fs-5 productos-home-parrafo">
+              Cargador y fundas MagSafe
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="img-fluid"
+              src="img/Productos/Mask group-2.png"
+              alt=""
+            />
+            <p class="text-center fs-5 productos-home-parrafo">
+              Auricular Airpods
+            </p>
+          </div>
+
+          <div>
+            <img class="img-fluid" src="img/Productos/Mask group.png" alt="" />
+            <p class="text-center fs-5 productos-home-parrafo">Fundas Iphone</p>
+          </div>
+        </article>
+
+        <a
+          class="mb-5 productos-home-boton border-0 w-25 fw-bold py-1"
+          href="html/productos.html"
+          >Ver todos los productos</a
+        >
+      </section>
+
+      <!-- SECCION NOSOTROS -->
+
+      <section
+        id="nosotros"
+        class="container-fluid nosotros-home d-flex flex-column flex-md-row align-items-center p-5 gap-2"
+      >
+        <article
+          class="container-fluid w-55 d-flex flex-row justify-content-center"
+        >
+          <div class="d-flex flex-column gap-3">
+            <h3 class="titulo-nosotros-home">¿Quienes somos?</h3>
+            <p class="fs-5">
+              Somos una empresa joven, apasionada por el rubro de la tecnología,
+              enfocada
+              <span class="fw-bold">
+                en brindar soluciones y productos de excelente calidad para
+                Samsung y Apple.</span
+              >
+            </p>
+            <p class="fs-5">
+              Comenzamos con este proyecto en el 2014, en Venezuela y ahora
+              decidimos darle vida a este sueño en Argentina.
+            </p>
+            <p class="fs-5">
+              Nuestra meta es
+              <span class="fw-bold">
+                tener clientes satisfechos con nuestros productos y servicios,
+                brindandoles un servicio de alta calidad.</span
+              >
+            </p>
+          </div>
+        </article>
+
+        <article
+          class="container-fluid w-45 d-flex flex-column align-items-center"
+        >
+          <img src="img/imagenes/nosotros-home.jpg" alt="" class="img-fluid" />
+        </article>
+      </section>
+
+      <!-- SECCION POTENCIA TU NEGOCIO-->
+
+      <section
+        class="container-fluid potencia-negocio-home d-flex flex-column flex-md-row align-items-center p-5"
+      >
+        <article
+          class="container-fluid w-45 d-flex flex-column align-items-center"
+        >
+          <img
+            src="img/imagenes/potencia-tu-negocio.png"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+
+        <article
+          class="container-fluid w-55 d-flex flex-row justify-content-center"
+        >
+          <div class="d-flex flex-column gap-3">
+            <h3 class="titulo-negocio-home">Potenciá tu negocio</h3>
+            <p class="fs-4">
+              <span class="fw-bold">
+                ¡Convertite en distribuidor de nuestros productos!</span
+              >
+              Realizamos venta por mayor y menor.
+            </p>
+            <a
+              class="mb-5 potencia-negocio-boton border-0 w-50 fw-bold py-1"
+              href="html/contacto.html"
+              >Quiero saber más</a
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer py-3">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-5 col-lg-5 col-xl-6 mb-4 d-flex flex-column gap-3"
+              >
+                <!-- Content -->
+                <a class="navbar-brand" href="./index.html">CLAVISTORE</a>
+
+                <div class="container d-flex flex-column">
+                  <h5 class="texto-footer-titles">¡Contactanos!</h5>
+
+                  <div class="d-flex flex-row gap-3">
+                    <i class="fa-solid fa-phone mt-1"></i>
+                    <p class="mb-0">11-5762-3955</p>
+                  </div>
+
+                  <div class="d-flex flex-row gap-3">
+                    <i class="fa-regular fa-envelope mt-1"></i>
+                    <p class="">clavistores2014@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                <!-- Links -->
+                <div>
+                  <h5 class="texto-footer texto-footer-titles my-2">
+                    Navegación
+                  </h5>
+
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-footer active p-0"
+                        aria-current="page"
+                        href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#productos"
+                        >Productos</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-link-footer p-0" href="#nosotros"
+                        >Nosotros</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="./html/contacto.html"
+                        >Contacto</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link-footer p-0"
+                        href="./html/preguntas.html"
+                        >Preguntas Frecuentes</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-2 mb-4">
+                <!-- Links -->
+
+                <div>
+                  <h5 class="texto-footer-titles my-2 text-nowrap">Medios de Pago</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <img
+                      class="me-2 img-footer"
+                      src="./img/mp.jpg"
+                      alt="mercado pago"
+                    />
+                    <img
+                      class="mx-2 img-footer"
+                      src="./img/rapipago.jpg"
+                      alt=" rapipago"
+                    />
+                    <img
+                      class="mx-2 img-footer"
+                      src="./img/pagofacil.jpg"
+                      alt="pago fácil"
+                    />
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="texto-footer-titles my-2 text-nowrap">Formas de envío</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <img
+                      class="me-2 img-footer"
+                      src="./img/correo.jpg"
+                      alt="correo argentino"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-1 col-lg-1 col-xl-1 mb-md-0 mb-4">
+                <!-- Links -->
+                <img
+                  class="img-wp rounded-circle"
+                  src="./img/whatsapp.jpg"
+                  alt="whatsapp"
+                />
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+        <hr />
+        <!-- Copyright -->
+        <div class="px-3 ms-5">
+          <p>Desarrollado por Florencia Patania 2022</p>
+        </div>
+        <!-- Copyright -->
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("carousel-slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+      }
+    </script>
+  </body>
 </html>

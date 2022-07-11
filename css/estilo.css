@@ -1,0 +1,318 @@
+:root {
+  --color1: #67daff;
+  --color2: #ffffff;
+  --color3: #007ac1;
+  --color4: #c4c4c4;
+  --color5: #000000;
+  --color6: #c3f5ff;
+  --color7: rgba(255, 255, 255, 0);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* NAVBAR inicio */
+.navbar {
+  background-color: var(--color2);
+  box-shadow: 5px 0px 10px #888888;
+  --bs-navbar-color: var(--color1);
+  --bs-navbar-hover-color: var(--color3);
+  --bs-navbar-brand-color: var(--color5);
+  --bs-navbar-brand-font-size: 36px;
+  --bs-nav-link-font-size: 18px;
+  --bs-navbar-active-color: var(--color3);
+  --bs-navbar-toggler-color: var(--color1);
+}
+
+.form-container {
+  border-radius: 5px;
+  color: #7a7a7a;
+  background-color: #cdcdcd;
+  font-size: 18px;
+}
+
+.navbar-input {
+  background-color: var(--color7);
+  border: 0px;
+  width: 9rem;
+}
+
+.navbar-input:focus {
+  outline: none;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+/* NAVBAR fin */
+
+/* CAROUSEL inicio */
+.carousel {
+  margin: auto;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  height: 100%;
+}
+
+.carousel-slide-img{
+    width: 100%;
+}
+
+.carousel-slide-text {
+  color: var(--color2);
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  text-align: left;
+}
+
+.carousel-slide-button{
+  background-color: var(--color1);
+  border: 0;
+  color: var(--color5);
+  font-weight: 600;
+}
+
+.carousel-slide-button:hover{
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+.carousel-slide-button:focus{
+  background-color: var(--color1);
+  outline: none !important;
+  box-shadow: none;
+  color: var(--color5);
+}
+
+.carousel-indicadores {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--color4);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: var(--color3);
+}
+
+.fade-carousel {
+  animation-name: fade-carousel;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-carousel {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* CAROUSEL fin */
+
+
+.productos-home {
+  background-color: var(--color3);
+}
+
+.productos-home-titulo {
+  color: var(--color2);
+}
+
+.productos-home-parrafo {
+  color: var(--color2);
+}
+
+.productos-home a {
+  background-color: var(--color2);
+  color: var(--color5);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nosotros-home {
+  background-color: var(--color6);
+}
+.nosotros-home img {
+  height: 60%;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.titulo-nosotros-home {
+  font-size: 36px;
+}
+
+.potencia-negocio-home {
+  background-color: var(--color2);
+}
+
+.potencia-negocio-boton {
+  background-color: var(--color3);
+  color: var(--color2);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.potencia-negocio-boton:hover{
+  color: var(--color2);
+}
+
+.potencia-negocio-home h3 {
+  font-size: 36px;
+}
+
+.potencia-negocio-home img {
+  height: 80%;
+  width: 80%;
+}
+
+/* BANNER inicio */
+.banner-contacto {
+  width: 100%;
+  height: 50vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.5), rgba(0, 122, 193, 0.5)),url("../img/banner/portrait-of-smiling-woman-texting-on-mobile-phone.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-preguntas-frecuentes {
+  width: 100%;
+  height: 40vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.5), rgba(0, 122, 193, 0.5)),url("../img/banner/woman-using-digital-tablet-on-couch.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-texto{
+  color: var(--color2); 
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  text-align: left;
+}
+
+.banner-texto-productos {
+  color: var(--color2); 
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  transform: translate(0, -90%);
+  width: 50%;
+  text-align: center;
+}
+
+.banner-productos {
+  width: 100%;
+  height: 55vw;
+  background-image: linear-gradient(rgba(0, 122, 193, 0.3), rgba(0, 122, 193, 0.3)),url("../img/banner/pexels-rann-vijay-7742585.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* BANNER fin */
+
+
+/* SECCION PRODUCTOS */
+
+.fa-circle-arrow-down {
+  color: var(--color2);
+}
+
+.productos-home-parrafo {
+  height: 50px;
+}
+
+/* SECCION FORM */
+
+.form-contacto {
+  background-color: var(--color3) ;
+}
+
+.form-contacto input:focus, .form-contacto textarea:focus{
+  background-color: inherit;
+}
+
+.form-control {
+
+  background-color: var(--color3) ;
+}
+
+.form-contacto ::placeholder {
+  color: var(--color2);
+  opacity: 1;
+}
+
+.boton-form {
+  width: 45%;
+  background-color: var(--color1);
+  border-radius: 5%;
+}
+
+.boton-form:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--color4);
+  --bs-navbar-brand-color: var(--color5);
+  --bs-navbar-brand-font-size: 36px;
+  --bs-texto-footer-font-size: 18px;
+  --bs-nav-link-font-size: 18px;
+}
+
+.texto-footer-titles {
+  font-weight: bold;
+}
+
+.nav-link-footer {
+  color: var(--color5);
+}
+
+.nav-link-footer:hover {
+  color: var(--color2);
+}
+
+.img-footer {
+  width: 50px;
+  height: 25px;
+}
+
+.img-wp {
+  width: 50px;
+  height: 50px;
+}
