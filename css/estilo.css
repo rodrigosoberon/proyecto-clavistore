@@ -260,6 +260,10 @@
   background-color: var(--color3) ;
 }
 
+.form-contacto input:focus, .form-contacto textarea:focus{
+  background-color: inherit;
+}
+
 .form-control {
 
   background-color: var(--color3) ;
